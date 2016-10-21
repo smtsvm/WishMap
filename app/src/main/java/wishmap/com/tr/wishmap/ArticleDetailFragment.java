@@ -1,6 +1,5 @@
-package wishmap.com.tr.wishmap.ui.quote;
+package wishmap.com.tr.wishmap;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.widget.Toolbar;
@@ -19,10 +18,6 @@ import com.bumptech.glide.Glide;
 import java.util.Date;
 
 import butterknife.Bind;
-import wishmap.com.tr.wishmap.R;
-import wishmap.com.tr.wishmap.dummy.DummyContent;
-import wishmap.com.tr.wishmap.ui.base.BaseActivity;
-import wishmap.com.tr.wishmap.ui.base.BaseFragment;
 
 /**
  * Shows the quote detail page.

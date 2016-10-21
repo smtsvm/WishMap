@@ -1,4 +1,4 @@
-package wishmap.com.tr.wishmap.ui.base;
+package wishmap.com.tr.wishmap;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,11 +9,6 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-
-import wishmap.com.tr.wishmap.R;
-import wishmap.com.tr.wishmap.ui.SettingsActivity;
-import wishmap.com.tr.wishmap.ui.ViewSamplesActivity;
-import wishmap.com.tr.wishmap.ui.quote.ListActivity;
 
 import static wishmap.com.tr.wishmap.util.LogUtil.logD;
 import static wishmap.com.tr.wishmap.util.LogUtil.makeLogTag;

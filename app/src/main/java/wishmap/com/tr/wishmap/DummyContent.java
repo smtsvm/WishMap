@@ -1,15 +1,9 @@
-package wishmap.com.tr.wishmap.dummy;
-
-import android.content.Context;
-import android.content.res.Resources;
-import android.widget.ImageView;
+package wishmap.com.tr.wishmap;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import wishmap.com.tr.wishmap.R;
 
 
 /**

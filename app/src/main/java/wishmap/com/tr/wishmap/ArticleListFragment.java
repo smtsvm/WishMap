@@ -1,4 +1,4 @@
-package wishmap.com.tr.wishmap.ui.quote;
+package wishmap.com.tr.wishmap;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -19,9 +19,6 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.BitmapImageViewTarget;
-
-import wishmap.com.tr.wishmap.R;
-import wishmap.com.tr.wishmap.dummy.DummyContent;
 
 /**
  * Shows a list of all available quotes.
@@ -125,7 +122,8 @@ public class ArticleListFragment extends ListFragment {
             final ImageView img = (ImageView) convertView.findViewById(R.id.thumbnail);
 
             // id'ler ülke kodlarına göre cachelenmeli, performans açısından - TODO - Faruk
-            int id = ArticleListFragment.this.getResources().getIdentifier(item.id, "drawable", "wishmap.com.tr.wishmap");
+            Context context = getContext();
+            int id = context.getResources().getIdentifier(item.id, "drawable", context.getPackageName());
 
             Glide.with(getActivity()).load(id).asBitmap().fitCenter().into(new BitmapImageViewTarget(img) {
                 @Override

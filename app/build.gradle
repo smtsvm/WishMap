@@ -35,5 +35,8 @@ dependencies {
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.github.championswimmer:Android-SocialButtons:1.0'
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+//    compile 'com.github.francescocervone:OpenRatingView:1.0.1'
+//    compile 'com.juanpabloprado:countrypicker:24.2.0'
+
     testCompile 'junit:junit:4.12'
 }
