@@ -12,7 +12,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:paddingTop="56dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp">
@@ -23,19 +23,46 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/login"
-            android:id="@+id/imageView" />
+            android:id="@+id/imageView"/>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp">
+            <in.championswimmer.libsocialbuttons.fabs.FABFacebook
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp" />
+            <in.championswimmer.libsocialbuttons.fabs.FABTwitter
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp" />
+            <in.championswimmer.libsocialbuttons.fabs.FABGoogleplus
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp" />
+            <in.championswimmer.libsocialbuttons.fabs.FABInstagram
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp" />
+        </LinearLayout>
         <EditText android:id="@+id/input_email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
             android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text"
             android:hint="Email" />
 
         <!--  Password Label -->
         <EditText android:id="@+id/input_password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="30dp"
             android:hint="Password"/>
 
         <Button
@@ -45,11 +72,14 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="24dp"
             android:padding="12dp"
+            android:background="@drawable/button"
+            android:textColor="@android:color/white"
             android:text="Login"/>
 
         <TextView android:id="@+id/link_signup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
             android:layout_marginBottom="24dp"
             android:text="No account yet? Create one"
             android:gravity="center"
