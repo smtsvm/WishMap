@@ -10,6 +10,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import wishmap.com.tr.wishmap.ui.quote.ListActivity;
+
 public class LoginActivity extends Activity {
 
     private Button loginButton;
@@ -22,7 +24,7 @@ public class LoginActivity extends Activity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intent = new Intent(LoginActivity.this, ListActivity.class);
                 startActivity(intent);
             }
         });
